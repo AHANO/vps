@@ -37,3 +37,4 @@ curl icanhazip.com
 echo "NEW IP"
 proxychains curl icanhazip.com
 ### TEST dns leaks https://thecybersecurityman.com/2018/08/08/pentest-edition-evade-detection-using-tor-and-proxy-chains/
+### https://askubuntu.com/questions/86375/apt-get-autocomplete-package-name-is-broken bash autocomplete
