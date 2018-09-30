@@ -13,6 +13,7 @@ wget -q -O - https://archive.kali.org/archive-key.asc  | apt-key add
 echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 echo "deb-src http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 apt-get update
+apt-get install net-tools
 apt-get install bash-completion
 apt-get install nmap -y
 apt-get install metasploit-framework -y
@@ -21,7 +22,7 @@ apt-get install apache2 -y
 apt-get install netcat -y
 apt-get install screen -y
 apt-get install proxychains -y
-
+apt-get install apt-transport-https -y
 ### TOR section
 echo "deb-src https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
 echo "deb https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
