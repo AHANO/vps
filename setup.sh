@@ -2,7 +2,7 @@
 ###vps packets needed
 ### Tested on debian wheezy 9
 ### To run directly
-### bash <(curl -s http://mywebsite.com/myscript.txt)
+### bash <(curl -s https://raw.githubusercontent.com/axano/vps/master/setup.sh)
 ### usefull commands 
 ### screen # to start screen
 ###  Hit Ctrl + A and then Ctrl + D # To disconnect (but leave the session running)
