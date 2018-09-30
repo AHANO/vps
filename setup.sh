@@ -20,3 +20,19 @@ apt-get install sqlmap -y
 apt-get install apache2 -y
 apt-get install netcat -y
 apt-get install screen -y
+apt-get install proxychains -y
+
+### TOR section
+echo "deb-src https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
+echo "deb https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
+gpg2 --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
+gpg2 --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add 
+apt-get update
+install tor deb.torproject.org-keyring
+service tor start
+### https://www.sunnyhoi.com/how-to-setup-proxychains-with-tor-in-kali-linux/
+echo "socks5  127.0.0.1  9050"  >> /etc/proxychains.conf
+echo "OLD IP"
+curl icanhazip.com
+echo "NEW IP"
+proxychains curl icanhazip.com
