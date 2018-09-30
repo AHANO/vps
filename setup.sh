@@ -28,7 +28,7 @@ echo "deb https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/so
 gpg --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add 
 apt-get update
-install tor deb.torproject.org-keyring
+install tor
 service tor start
 ### https://www.sunnyhoi.com/how-to-setup-proxychains-with-tor-in-kali-linux/
 echo "OLD IP"
