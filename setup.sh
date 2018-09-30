@@ -31,7 +31,6 @@ apt-get update
 install tor deb.torproject.org-keyring
 service tor start
 ### https://www.sunnyhoi.com/how-to-setup-proxychains-with-tor-in-kali-linux/
-echo "socks5  127.0.0.1  9050"  >> /etc/proxychains.conf
 echo "OLD IP"
 curl icanhazip.com
 echo "NEW IP"
