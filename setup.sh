@@ -23,13 +23,15 @@ apt-get install netcat -y
 apt-get install screen -y
 apt-get install proxychains -y
 apt-get install apt-transport-https -y
+apt-get install dnsutils -y
 ### TOR section
 echo "deb-src https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
 echo "deb https://deb.torproject.org/torproject.org stretch main" >> /etc/apt/sources.list
+apt-get install gnupg -y
 gpg --recv A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89
 gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add 
 apt-get update
-install tor
+apt-get install tor
 service tor start
 ### https://www.sunnyhoi.com/how-to-setup-proxychains-with-tor-in-kali-linux/
 echo "OLD IP"
